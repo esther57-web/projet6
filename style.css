@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    color: hsl(234, 12%, 34%);
+    background-color: hsl(0, 0%, 98%);
+}
+
+h1 {
+    font-weight: 200;
+}
+
+strong {
+    font-weight: 600;
+}
+
+p {
+    font-size: smaller;
+    color: hsl(229, 6%, 66%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 700px;
+    margin: auto;
+
+}
+
+.box {
+    background-color: white;
+    border-top: 5px solid;
+    padding: 20px;
+    text-align: start;
+    width: 200px; 
+    margin: 10px; 
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 5px rgb(219, 219, 219);
+}
+
+svg {
+    margin-left: 70%;
+    margin-right: 10%;
+    scale: 0.7;
+}
+
+.one {
+    border-color: hsl(180, 62%, 55%);
+}
+
+.two {
+    border-color: hsl(0, 78%, 62%);
+}
+
+.three {
+    border-color: hsl(34, 97%, 64%);
+}
+
+.four {
+    border-color: hsl(212, 86%, 64%);
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .one {
+        margin-bottom: 200px;
+        position: relative;
+        top: 25%;
+    }
+
+    .four {
+        position: relative;
+        top: 25%;
+    }
+}
